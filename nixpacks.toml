@@ -1,0 +1,5 @@
+# This tells Railway's Nixpacks builder to install ffmpeg system-wide.
+# yt-dlp needs ffmpeg to merge separate video+audio streams (required for 1080p+).
+
+[phases.setup]
+nixPkgs = ["ffmpeg"]
